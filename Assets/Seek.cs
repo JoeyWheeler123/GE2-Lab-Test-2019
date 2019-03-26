@@ -12,6 +12,8 @@ public class Seek : SteeringBehaviour
     public GameObject targetGameObject = null;
     public Vector3 target;// = Vector3.zero;
 
+    public float timer = .5f;
+
     //public Transform[] bases;
 
     int index;
@@ -50,7 +52,14 @@ public class Seek : SteeringBehaviour
 
     public void Shoot()
     {
-        Instantiate(bullet);
+        Instantiate(bullet, this.transform.position, Quaternion.identity);
     }
 
+    private void OnCollisionStay(Collision collision)
+    {
+        if(collision.collider.tag == "base")
+        {
+            Shoot();
+        }
+    }
 }

@@ -839,7 +839,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &748959474
 MeshRenderer:
@@ -1390,7 +1390,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &947435942
 MeshRenderer:
@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 1363778834}
   m_Layer: 10
   m_Name: base
-  m_TagString: Untagged
+  m_TagString: base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1502,7 +1502,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1363778831
 MeshRenderer:
@@ -1651,7 +1651,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 2, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1606550182
 MeshRenderer:
@@ -1741,6 +1741,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 3596840251190882011, guid: 7273480d726ed4734a68bbb5494fa7c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: base
+      objectReference: {fileID: 0}
     - target: {fileID: 3596840251190881991, guid: 7273480d726ed4734a68bbb5494fa7c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1795,6 +1800,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596840251190882008, guid: 7273480d726ed4734a68bbb5494fa7c8,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596840251190882008, guid: 7273480d726ed4734a68bbb5494fa7c8,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596840251190882008, guid: 7273480d726ed4734a68bbb5494fa7c8,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3596840250719046537, guid: 7273480d726ed4734a68bbb5494fa7c8,
         type: 3}
