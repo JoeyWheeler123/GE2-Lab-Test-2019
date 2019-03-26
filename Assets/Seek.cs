@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
+
 public class Seek : SteeringBehaviour
 {
+    public GameObject bullet;
+
     public GameObject targetGameObject = null;
-    public Vector3 target = Vector3.zero;
+    public Vector3 target;// = Vector3.zero;
+
+    //public Transform[] bases;
+
+    int index;
 
     public void OnDrawGizmos()
     {
@@ -27,6 +34,12 @@ public class Seek : SteeringBehaviour
         return boid.SeekForce(target);    
     }
 
+    public void Start()
+    {
+       //var possibleTargets = GameObject.FindWithTag("base");
+        //targetGameObject = possibleTargets[Random.Range(0, possibleTargets.length)].transform;
+    }
+
     public void Update()
     {
         if (targetGameObject != null)
@@ -34,4 +47,10 @@ public class Seek : SteeringBehaviour
             target = targetGameObject.transform.position;
         }
     }
+
+    public void Shoot()
+    {
+        Instantiate(bullet);
+    }
+
 }
