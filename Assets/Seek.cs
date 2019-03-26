@@ -14,7 +14,7 @@ public class Seek : SteeringBehaviour
 
     public float timer = .5f;
 
-    //public Transform[] bases;
+    public Transform[] bases;
 
     int index;
 
@@ -38,8 +38,7 @@ public class Seek : SteeringBehaviour
 
     public void Start()
     {
-       //var possibleTargets = GameObject.FindWithTag("base");
-        //targetGameObject = possibleTargets[Random.Range(0, possibleTargets.length)].transform;
+        index = UnityEngine.Random.Range(0, bases.Length);
     }
 
     public void Update()
@@ -50,7 +49,7 @@ public class Seek : SteeringBehaviour
         }
     }
 
-    public void Shoot()
+    /*public void Shoot()
     {
         Instantiate(bullet, this.transform.position, Quaternion.identity);
     }
@@ -61,5 +60,5 @@ public class Seek : SteeringBehaviour
         {
             Shoot();
         }
-    }
+    }*/
 }
